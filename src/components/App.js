@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 import Web3 from 'web3'
-import DaiToken from '../abis/DaiToken.json'
-import DappToken from '../abis/DappToken.json'
-import TokenFarm from '../abis/TokenFarm.json'
+import DaiToken from '../../build/contracts/DaiToken.json'
+import DappToken from '../../build/contracts/DappToken.json'
+import TokenFarm from '../../build/contracts/TokenFarm.json'
 import Navbar from './Navbar'
 import Main from './Main'
 import './App.css'
+
+/* klaytn development */
+import caver from '../klaytn/caver'
+
 
 class App extends Component {
 
